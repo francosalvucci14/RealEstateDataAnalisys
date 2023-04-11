@@ -1,26 +1,226 @@
-Locali,Prezzi
-"Monolocale via degli Olivi, Centocelle, Roma",€ 103.000
-"Quadrilocale via delle Campanule 20, Centocelle, Roma",€ 260.000
-"Monolocale via Giovanni Battista De Toni, Centocelle, Roma",€ 109.000
-"Bilocale via dei Frassini, 100, Centocelle, Roma",€ 169.000
-"Bilocale via Giacomo Bresadola, Centocelle, Roma",€ 178.000
-"Attico via degli Ontani 32, Centocelle, Roma",€ 169.000
-"Bilocale piazza dei Pini, Centocelle, Roma",€ 155.000
-"Trilocale via del Trifoglio 43, Centocelle, Roma",€ 299.000
-"Trilocale via Domenico Panaroli, 41, Centocelle, Roma",€ 290.000
-"Bilocale via Ferdinando Bassi, Centocelle, Roma",€ 139.000
-"Bilocale via delle Rose 11, Centocelle, Roma",€ 155.000
-"Monolocale via delle Campanule, Centocelle, Roma",€ 79.000
-"Bilocale via degli Arbusti 1, Centocelle, Roma",€ 159.000
-"Trilocale via Tor De Schiavi, 0, Centocelle, Roma",€ 259.000
-"Bilocale viale della Primavera, Tor de' Schiavi, Roma",€ 209.000
-"Bilocale via Valmontone, Centocelle, Roma",€ 125.000
-"Villa unifamiliare via dei Pioppi, Centocelle, Roma",€ 180.000
-"Bilocale via Tor Dè Schiavi, 349, Tor de' Schiavi, Roma",€ 145.000
-"Trilocale via dei Gelsi 85, Centocelle, Roma",€ 200.000
-"Trilocale via delle Acacie 116, Centocelle, Roma",€ 159.000
-"Trilocale via delle Robinie, Centocelle, Roma",€ 245.000
-"Trilocale via Giovanni Gussone, 30, 00171 Roma Italia, Centocelle, Roma",€ 250.000
-"Trilocale via Dei Ginepri 66, Centocelle, Roma",€ 349.000
-"Trilocale via dei Frassini 61, Centocelle, Roma",€ 204.000
-"Bilocale via degli Abeti 11, Centocelle, Roma",€ 150.000
+Locali,Prezzi,Media prezzo:
+"Monolocale via Delle Azalee, Centocelle, Roma",€ 139.000,0
+"Trilocale via delle Palme, Centocelle, Roma",€ 235.000,0
+"Trilocale via delle Betulle 134, Centocelle, Roma",€ 210.000,0
+"Bilocale via Valmontone 45, Centocelle, Roma",€ 200.000,0
+"Quadrilocale via delle Acacie 31C, Centocelle, Roma",€ 339.000,0
+"Trilocale via Domenico Panaroli, Centocelle, Roma",€ 329.000,0
+"Bilocale via Filippo Smaldone, Centocelle, Roma",€ 199.000,0
+"Attico via dei Pioppi 40, Centocelle, Roma",€ 138.000,0
+"Monolocale piazza delle Iris, Centocelle, Roma",€ 100.000,0
+"Trilocale via delle Palme 188, Centocelle, Roma",€ 289.000,0
+"Bilocale via degli Ontani, Centocelle, Roma",€ 205.000,0
+"Trilocale via Calpurnio Fiamma, Cinecittà, Roma",€ 209.000,0
+"Trilocale via degli Elci 16, Centocelle, Roma",€ 207.000,0
+"Trilocale via Tor de' Schiavi 168, Centocelle, Roma",€ 210.000,0
+"Trilocale largo Santi Romano, Cinecittà, Roma",€ 229.000,0
+"Villa bifamiliare, nuova, 122 m², Alessandrino - Torre Spaccata, Roma",€ 379.000,0
+"Bilocale via dei Gelsi 76, Centocelle, Roma",€ 137.000,0
+"Bilocale via delle Palme, Centocelle, Roma",€ 125.000,0
+"Bilocale via Livia Drusilla, Cinecittà, Roma",€ 220.000,0
+"Trilocale piazza dei Gerani 29, Centocelle, Roma",€ 260.000,0
+"Bilocale via dei Castani 44, Centocelle, Roma",€ 160.000,0
+"Bilocale via delle Robinie, Centocelle, Roma",€ 305.000,0
+"Trilocale via delle Robinie, Centocelle, Roma",€ 325.000,0
+"Bilocale via delle Albizzie, Centocelle, Roma",€ 199.000,0
+"Bilocale via delle Azalee, Centocelle, Roma",€ 139.000,0
+"Trilocale viale Palmiro Togliatti 756, Alessandrino - Torre Spaccata, Roma",€ 210.000,0
+"Monolocale via degli Olivi, Centocelle, Roma",€ 103.000,0
+"Quadrilocale via delle Campanule 20, Centocelle, Roma",€ 260.000,0
+"Monolocale via Giovanni Battista De Toni, Centocelle, Roma",€ 109.000,0
+"Bilocale via dei Frassini, 100, Centocelle, Roma",€ 169.000,0
+"Bilocale via Giacomo Bresadola, Centocelle, Roma",€ 178.000,0
+"Attico via degli Ontani 32, Centocelle, Roma",€ 169.000,0
+"Bilocale piazza dei Pini, Centocelle, Roma",€ 155.000,0
+"Trilocale via del Trifoglio 43, Centocelle, Roma",€ 299.000,0
+"Trilocale via Domenico Panaroli, 41, Centocelle, Roma",€ 290.000,0
+"Bilocale via Ferdinando Bassi, Centocelle, Roma",€ 139.000,0
+"Bilocale via delle Rose 11, Centocelle, Roma",€ 155.000,0
+"Monolocale via delle Campanule, Centocelle, Roma",€ 79.000,0
+"Bilocale via degli Arbusti 1, Centocelle, Roma",€ 159.000,0
+"Trilocale via Tor De Schiavi, 0, Centocelle, Roma",€ 259.000,0
+"Bilocale viale della Primavera, Tor de' Schiavi, Roma",€ 209.000,0
+"Bilocale via Valmontone, Centocelle, Roma",€ 125.000,0
+"Villa unifamiliare via dei Pioppi, Centocelle, Roma",€ 180.000,0
+"Bilocale via Tor Dè Schiavi, 349, Tor de' Schiavi, Roma",€ 145.000,0
+"Trilocale via dei Gelsi 85, Centocelle, Roma",€ 200.000,0
+"Trilocale via delle Acacie 116, Centocelle, Roma",€ 159.000,0
+"Trilocale via delle Robinie, Centocelle, Roma",€ 245.000,0
+"Trilocale via Giovanni Gussone, 30, 00171 Roma Italia, Centocelle, Roma",€ 250.000,0
+"Trilocale via Dei Ginepri 66, Centocelle, Roma",€ 349.000,0
+"Trilocale via dei Frassini 61, Centocelle, Roma",€ 204.000,0
+"Bilocale via degli Abeti 11, Centocelle, Roma",€ 150.000,0
+"Attico via Giacomo Bresadola, Centocelle, Roma",€ 295.000,0
+"Bilocale via degli Olivi, Centocelle, Roma",€ 163.000,0
+"Attico via delle Rose, Centocelle, Roma",€ 240.000,0
+"Attico via degli Olivi, Centocelle, Roma",€ 215.000,0
+"Trilocale via Federico Delpino, Centocelle, Roma",€ 219.000,0
+"Quadrilocale via degli Abeti, Centocelle, Roma",€ 259.000,0
+"Trilocale via dei Ciclamini, Centocelle, Roma",€ 209.000,0
+"Trilocale via dei Noci 81, Centocelle, Roma",€ 229.000,0
+"Bilocale via delle Rose 152, Centocelle, Roma",€ 179.000,0
+"Bilocale via delle Acacie, Centocelle, Roma",€ 165.000,0
+"Bilocale via dei Calicanti 7, Centocelle, Roma",€ 159.000,0
+"Bilocale via delle Mimose 48, Centocelle, Roma",€ 159.000,0
+"Attico via dei Lauri 67, Centocelle, Roma",€ 229.000,0
+"Bilocale via delle Robinie 210, Centocelle, Roma",€ 129.000,0
+"Bilocale via delle Ninfee 25, Centocelle, Roma",€ 179.000,0
+"Bilocale piazza dei Gerani 51, Centocelle, Roma",€ 245.000,0
+"Trilocale viale Palmiro Togliatti 750, Alessandrino - Torre Spaccata, Roma",€ 185.000,0
+"Trilocale piazza delle Peonie 5, Centocelle, Roma",€ 229.000,0
+"Bilocale piazza di San Felice da Cantalice 5, Centocelle, Roma",€ 177.000,0
+"Trilocale via degli Aceri 127, Centocelle, Roma",€ 169.000,0
+"Bilocale via delle Mimose 40, Centocelle, Roma",€ 169.000,0
+"Trilocale via delle Acacie 96, Centocelle, Roma",€ 245.000,0
+"Trilocale via dei Frassini 48, Centocelle, Roma",€ 395.000,0
+"Bilocale via delle Liane 13, Centocelle, Roma",€ 189.000,0
+"Trilocale piazza delle Peonie 5, Centocelle, Roma",€ 219.000,0
+"Attico via degli Anemoni 22, Centocelle, Roma",€ 209.000,0
+"Trilocale via dei Platani 43, Centocelle, Roma",€ 210.000,0
+"Trilocale via dei Licheni 38, Centocelle, Roma",€ 209.000,0
+"Quadrilocale viale Marco Fulvio Nobiliore 153, Cinecittà, Roma",€ 235.000,0
+"Bilocale via dei Narcisi 20, Centocelle, Roma",€ 147.000,0
+"Trilocale via dei Platani 64, Centocelle, Roma",€ 285.000,0
+"Attico via delle Liane 14, Centocelle, Roma",€ 235.000,0
+"Bilocale via Ferentino 50, Centocelle, Roma",€ 145.000,0
+"Attico via delle Sequoie 46, Centocelle, Roma",€ 429.000,0
+"Villa unifamiliare via Ceccano 9, Centocelle, Roma",€ 569.000,0
+"Bilocale via degli Anemoni, Centocelle, Roma",€ 159.000,0
+"Bilocale via dei Calicanti 7, Centocelle, Roma",€ 159.000,0
+"Bilocale via dei Gerani, Centocelle, Roma",€ 129.000,0
+"Trilocale viale delle Gardenie 151, Centocelle, Roma",€ 220.000,0
+"Bilocale via Vincenzo Menasi 18, Centocelle, Roma",€ 109.000,0
+"Trilocale viale Palmiro Togliatti 514, Alessandrino - Torre Spaccata, Roma",€ 169.000,0
+"Monolocale via degli Olivi, Centocelle, Roma",€ 65.000,0
+"Trilocale via Castore Durante 78, Centocelle, Roma",€ 269.000,0
+"Trilocale via dei Ciclamini 111, Centocelle, Roma",€ 289.000,0
+"Trilocale via dei Castani 290, Centocelle, Roma",€ 209.000,0
+"Trilocale via dei Ciclamini 120, Centocelle, Roma",€ 259.000,0
+"Monolocale via degli Olivi, Centocelle, Roma",€ 124.000,0
+"Bilocale via degli Ontani, Centocelle, Roma",€ 149.000,0
+"Bilocale via degli Ontani, Centocelle, Roma",€ 155.000,0
+"Trilocale via dei Ciclamini, Centocelle, Roma",€ 187.000,0
+"Trilocale via delle Robinie, Centocelle, Roma",€ 240.000,0
+"Trilocale via delle Palme, Centocelle, Roma",€ 209.000,0
+"Bilocale via degli Olivi, Centocelle, Roma",€ 228.000,0
+"Attico via degli Olivi, Centocelle, Roma",€ 315.000,0
+"Attico via degli Olivi 58, Centocelle, Roma",€ 280.000,0
+"Monolocale via delle Robinie, Centocelle, Roma",€ 85.000,0
+"Bilocale via delle Acacie, Centocelle, Roma",€ 132.000,0
+"Trilocale via dei Ciclamini 17, Centocelle, Roma",€ 219.000,0
+"Bilocale via degli Ontani, Centocelle, Roma",€ 179.000,0
+"Bilocale via Valmontone 45, Centocelle, Roma",€ 230.000,0
+"Trilocale viale della Primavera, Tor de' Schiavi, Roma",€ 332.000,0
+"Bilocale via degli Ontani, Centocelle, Roma",€ 135.000,0
+"Trilocale via dei Gelsi, Centocelle, Roma",€ 187.000,0
+"Trilocale via Antonio Sebastiani 27, Centocelle, Roma",€ 149.000,0
+"Trilocale via Percile 16, Centocelle, Roma",€ 240.000,0
+"Bilocale via dei Gelsi 139, Centocelle, Roma",€ 129.000,0
+"Bilocale via delle Palme 200, Centocelle, Roma",€ 145.000,0
+"Quadrilocale via Giovanni Gussone, Centocelle, Roma",€ 390.000,0
+"Villa unifamiliare via Ceprano 53, Centocelle, Roma",€ 289.000,0
+"Trilocale via delle Azalee, Centocelle, Roma",€ 270.000,0
+"Trilocale via Giacomo Bresadola, Centocelle, Roma",€ 229.000,0
+"Trilocale via delle Azalee, Centocelle, Roma",€ 159.000,0
+"Monolocale via dei Glicini, Centocelle, Roma",€ 99.000,0
+"Trilocale via Ernesto Mauri, Centocelle, Roma",€ 185.000,0
+"Monolocale viale delle Orchidee, Centocelle, Roma",€ 132.000,0
+"Bilocale piazza dei Mirti, Centocelle, Roma",€ 225.000,0
+"Trilocale via Prenestina, Centocelle, Roma",€ 239.000,0
+"Bilocale via dei Pini, Centocelle, Roma","€ 148.000€ 156.000(-5,1%)",0
+"Trilocale via Giovanni Passerini, Centocelle, Roma",€ 383.000,0
+"Bilocale via delle Acacie 69, Centocelle, Roma",€ 115.000,0
+"Trilocale via delle Albizzie, Centocelle, Roma",€ 199.000,0
+"Trilocale via Prenestina, Centocelle, Roma",€ 279.000,0
+"Bilocale via dei Gelsi, Centocelle, Roma",€ 129.000,0
+"Trilocale da ristrutturare, secondo piano, Centocelle, Roma",€ 175.000,0
+"Quadrilocale via Tor de' Schiavi 192, Centocelle, Roma",€ 349.000,0
+"Trilocale via Ferdinando Bassi 5, Centocelle, Roma",€ 149.000,0
+"Bilocale via dei Frassini 32, Centocelle, Roma","€ 129.000€ 139.000(-7,2%)",0
+"Bilocale via dei Frassini 31, Centocelle, Roma",€ 158.000,0
+"Bilocale via delle Palme, Centocelle, Roma",€ 145.000,0
+"Bilocale via Calpurnio Pisone 111, Cinecittà, Roma",€ 169.000,0
+"Bilocale via Papiria 50, Cinecittà, Roma",€ 249.000,0
+"Monolocale via Dei Ciclamini, Centocelle, Roma",€ 49.000,0
+"Trilocale via dei Gelsi, Centocelle, Roma",€ 249.000,0
+"Monolocale via degli Anemoni, Centocelle, Roma",€ 85.000,0
+"Quadrilocale via dei Castani 111, Centocelle, Roma",€ 259.000,0
+"Bilocale via delle Palme, Centocelle, Roma",€ 145.000,0
+"Trilocale via delle Mimose 26, Centocelle, Roma",€ 167.000,0
+"Attico via delle Palme 202, Centocelle, Roma",€ 279.000,0
+"Bilocale via delle Robinie 184, Centocelle, Roma",€ 199.000,0
+"Trilocale via delle Albizzie 29, Centocelle, Roma",€ 259.000,0
+"Bilocale viale Palmiro Togliatti 561, Centocelle, Roma",€ 129.000,0
+"Attico via dei Narcisi 19, Centocelle, Roma",€ 320.000,0
+"Trilocale via dei Frassini 117, Centocelle, Roma",€ 179.000,0
+"Bilocale via delle Ortensie 10, Centocelle, Roma",€ 74.000,0
+"Monolocale via degli Anemoni, Centocelle, Roma",€ 155.000,0
+"Trilocale via dei Lecci 11, Centocelle, Roma",€ 159.000,0
+"Quadrilocale via Vincenzo Cesati 94, Centocelle, Roma",€ 285.000,0
+"Bilocale via Vincenzo Menasi 5, Centocelle, Roma",€ 130.000,0
+"Bilocale via Valmontone 45, Centocelle, Roma",€ 210.000,0
+"Quadrilocale via dei Gelsi 37, Centocelle, Roma",€ 239.000,0
+"Quadrilocale via Arpino, Centocelle, Roma",€ 255.000,0
+"Trilocale via dei gelsi 53, Centocelle, Roma",€ 235.000,0
+"Bilocale via dei Faggi, Centocelle, Roma",€ 115.000,0
+"Bilocale via Valmontone 45, Centocelle, Roma",€ 210.000,0
+"Bilocale via delle Rose 102, Centocelle, Roma",€ 119.000,0
+"Bilocale via Valmontone 45, Centocelle, Roma",€ 230.000,0
+"Quadrilocale via Scribonio Curione, Quadraro, Roma",€ 300.000,0
+"Bilocale via dei Castani, Centocelle, Roma",€ 140.000,0
+"Bilocale via delle Palme, Centocelle, Roma",€ 145.000,0
+"Bilocale via delle Acacie 10, Centocelle, Roma",€ 129.000,0
+"Trilocale via Riofreddo 44, Centocelle, Roma",€ 239.000,0
+"Bilocale via Giacomo Bresadola 47, Centocelle, Roma",€ 199.000,0
+"Trilocale via del Trifoglio 43, Centocelle, Roma",€ 299.000,0
+"Bilocale via dei Castani, Centocelle, Roma",€ 229.000,0
+"Bilocale via degli elci 39, Centocelle, Roma",€ 159.000,0
+"Bilocale via delle Acacie 9, Centocelle, Roma",€ 169.000,0
+"Trilocale via dei Glicini 137, Centocelle, Roma",€ 319.000,0
+"Monolocale via dei Glicini 30, Centocelle, Roma",€ 99.000,0
+"Bilocale via dei Tigli 4, Centocelle, Roma",€ 149.000,0
+"Quadrilocale via dei Castani, Centocelle, Roma",€ 260.000,0
+"Bilocale piazza degli Ontani 3, Centocelle, Roma",€ 110.000,0
+"Bilocale via degli Ontani 82, Centocelle, Roma",€ 205.000,0
+"Trilocale via Vincenzo Menasi 15, Centocelle, Roma",€ 149.000,0
+"Bilocale via Prenestina, Centocelle, Roma",€ 185.000,0
+"Trilocale via dei Pampini, Centocelle, Roma",€ 219.000,0
+"Trilocale via dei Platani 41, Centocelle, Roma",€ 279.000,0
+"Bilocale via delle Palme 200, Centocelle, Roma",€ 145.000,0
+"Bilocale via delle Palme 41, Centocelle, Roma",€ 180.000,0
+"Trilocale via dei Noci, Centocelle, Roma",€ 175.000,0
+"Bilocale via delle Acacie, Centocelle, Roma",€ 189.000,0
+"Trilocale via Enrico Carano, Centocelle, Roma",€ 185.000,0
+"Trilocale via DEGLI ONTANI, Centocelle, Roma",€ 225.000,0
+"Monolocale via dei Glicini, Centocelle, Roma",€ 99.000,0
+"Trilocale ottimo stato, terzo piano, Centocelle, Roma",€ 159.000,0
+"Bilocale via dei Gelsi, Centocelle, Roma",€ 129.000,0
+"Bilocale via dei Castani, Centocelle, Roma",€ 185.000,0
+"Trilocale piazza degli Ontani, Centocelle, Roma",€ 185.000,0
+"Bilocale via dei platani 34, Centocelle, Roma",€ 165.000,0
+"Trilocale via Ernesto Mauri, Centocelle, Roma",€ 189.000,0
+"Trilocale via dei Gelsi 82, Centocelle, Roma",€ 239.000,0
+"Trilocale viale Marco Fulvio Nobiliore 151, Cinecittà, Roma",€ 279.000,0
+"Monolocale via Carpineto 37, Centocelle, Roma","€ 65.000€ 69.000(-5,8%)",0
+"Bilocale via Delle Fresie , 41, Centocelle, Roma",€ 150.000,0
+"Bilocale via delle Albizzie 21, Centocelle, Roma",€ 229.000,0
+"Monolocale via degli Ontani 18, Centocelle, Roma",€ 145.000,0
+"Quadrilocale via dei Gerani, Centocelle, Roma",€ 324.000,0
+"Bilocale via Tor De' Schiavi 148, Centocelle, Roma",€ 225.000,0
+"Trilocale via delle Robinie 20, Centocelle, Roma",€ 230.000,0
+"Trilocale via Tor de' Schiavi 151, Centocelle, Roma",€ 239.000,0
+"Trilocale via delle Betulle, Centocelle, Roma",€ 244.000,0
+"Monolocale via dei Castani 144, Centocelle, Roma",€ 240.000,0
+"Bilocale via dei Gelsi, Centocelle, Roma",€ 129.000,0
+"Bilocale via Vincenzo Briganti 12, Centocelle, Roma",€ 189.000,0
+"Trilocale via Tor de' Schiavi 219, Centocelle, Roma",€ 250.000,0
+"Bilocale via delle Giunchiglie, Centocelle, Roma",€ 199.000,0
+"Trilocale via dei Castani, Centocelle, Roma",€ 215.000,0
+"Trilocale largo Santi Romano 21, Cinecittà, Roma",€ 148.000,0
+"Trilocale via Pietro Romualdo Pirotta 10, Centocelle, Roma",€ 210.000,0
+"Trilocale via dei Noci, Centocelle, Roma",€ 269.000,0
+"Trilocale largo Giacomo Bresadola 12, Centocelle, Roma",€ 265.000,0
+"Attico via dei Gerani 67, Centocelle, Roma",€ 359.000,0
+"Trilocale via Delle Robinie, Centocelle, Roma",€ 140.000,0
+"Bilocale viale Palmiro Togliatti 753, Centocelle, Roma",€ 99.000,0
+"Trilocale viale marco fulvio nobiliore 151, Cinecittà, Quadraro, Roma",€ 245.000,0
