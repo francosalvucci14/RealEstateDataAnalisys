@@ -76,7 +76,7 @@ def search(argv):
         locali_tot += locali
         price_tot += prices
     else:
-        for i in range(1, pagine):
+        for i in range(1, pagine+1):
             url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&pag={i}&noAste=1"
             print(url)
             # Eseguire richiesta GET
