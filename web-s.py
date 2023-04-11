@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 import sys
 import getopt
 # Indirizzo sito web
-All = "case"
 
 def search():
     locali_tot = []
