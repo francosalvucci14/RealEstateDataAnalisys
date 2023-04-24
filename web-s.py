@@ -51,8 +51,9 @@ def search(argv):
     locali_tot = []
     price_tot = []
     cycle = SearchNumberOfElements(arg_type,arg_zone)
-    print(cycle)
+    print(f"Numeri di elementi trovati : {cycle}")
     pagine = math.ceil(cycle/25)
+    print("Inizio scansione e raccolta dati")
     if pagine  == 1:
         url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&noAste=1"
         print(url)
@@ -99,18 +100,26 @@ def search(argv):
             locali_tot += locali
             price_tot += prices
 
-    return locali_tot, price_tot
+    return locali_tot, price_tot,arg_type
 
 
-locali, prezzi = search(sys.argv)
+locali, prezzi,tipo_immobile = search(sys.argv)
 somma_prezzi, count_locali, media_prezzo = 0, 0, 0
+#prezzi_media = [0]*len(prezzi)
+#print(prezzi_media)
 # for i in range(len(prezzi)):
-#     prezzi[i] = prezzi[i].replace("€","")
-#     print(prezzi[i])
-#     somma_prezzi+=float(prezzi[i])
+#     prezzi_media[i] = prezzi[i].replace("€","")
+#     print(prezzi_media[i])
+#     if ' ' in prezzi_media[i]:
+#         prezzi_media_split=prezzi_media[i].split(" ")
+#         somma_prezzi+=float(prezzi_media_split[0])
+#     else:
+#         somma_prezzi+=float(prezzi_media[i])
 #     count_locali+=1
-# print(somma_prezzi)
-# media_prezzo = somma_prezzi/count_locali
+#print(somma_prezzi)
+#media_prezzo = somma_prezzi/count_locali
+print("Elaboro csv personalizzato")
 df = pd.DataFrame({'Locali': locali, 'Prezzi': prezzi,
                   'Media prezzo:': media_prezzo})
-df.to_csv('Immobiliare.csv', index=False, encoding='utf-8')
+df.to_csv(f'Immobiliare_{tipo_immobile}.csv', index=False, encoding='utf-8')
+print("Fine elaborazione.")
