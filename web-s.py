@@ -5,6 +5,29 @@ from bs4 import BeautifulSoup
 import sys
 import getopt
 import math
+import time
+
+# Print iterations progress
+def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
+    """
+    Call in a loop to create terminal progress bar
+    @params:
+        iteration   - Required  : current iteration (Int)
+        total       - Required  : total iterations (Int)
+        prefix      - Optional  : prefix string (Str)
+        suffix      - Optional  : suffix string (Str)
+        decimals    - Optional  : positive number of decimals in percent complete (Int)
+        length      - Optional  : character length of bar (Int)
+        fill        - Optional  : bar fill character (Str)
+        printEnd    - Optional  : end character (e.g. "\r", "\r\n") (Str)
+    """
+    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total)))
+    filledLength = int(length * iteration // total)
+    bar = fill * filledLength + '-' * (length - filledLength)
+    print(f'\r{prefix} |{bar}| {percent}% {suffix}', end = printEnd)
+    # Print New Line on Complete
+    if iteration == total: 
+        print()
 # Indirizzo sito web
 def FindNumber(string):
     empty_string = ""
@@ -54,6 +77,7 @@ def search(argv):
     print(f"Numeri di elementi trovati : {cycle}")
     pagine = math.ceil(cycle/25)
     print("Inizio scansione e raccolta dati")
+    printProgressBar(0, cycle, prefix = 'Progress:', suffix = 'Complete', length = 50)
     if pagine  == 1:
         url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&noAste=1"
         print(url)
@@ -78,8 +102,10 @@ def search(argv):
         price_tot += prices
     else:
         for i in range(1, pagine+1):
+            time.sleep(0.1)
+            printProgressBar(i+1, pagine, prefix = 'Progress:', suffix = 'Complete', length = 50)
             url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&pag={i}&noAste=1"
-            print(url)
+            #print(url)
             # Eseguire richiesta GET
             response = requests.get(url)
             # Analizzare documento HTML del codice sorgente con BeautifulSoup
