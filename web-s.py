@@ -6,6 +6,7 @@ import sys
 import getopt
 import math
 import time
+import csv
 
 # Print iterations progress
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
@@ -103,7 +104,7 @@ def search(argv):
     else:
         for i in range(1, pagine+1):
             time.sleep(0.1)
-            printProgressBar(i+1, pagine, prefix = 'Progress:', suffix = 'Complete', length = 50)
+            printProgressBar(i, pagine, prefix = 'Progress:', suffix = 'Complete', length = 50)
             url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&pag={i}&noAste=1"
             #print(url)
             # Eseguire richiesta GET
@@ -130,7 +131,8 @@ def search(argv):
 
 
 locali, prezzi,tipo_immobile = search(sys.argv)
-somma_prezzi, count_locali, media_prezzo = 0, 0, 0
+media_prezzo = 0
+#somma_prezzi, count_locali, media_prezzo = 0, 0, 0
 #prezzi_media = [0]*len(prezzi)
 #print(prezzi_media)
 # for i in range(len(prezzi)):
@@ -145,7 +147,8 @@ somma_prezzi, count_locali, media_prezzo = 0, 0, 0
 #print(somma_prezzi)
 #media_prezzo = somma_prezzi/count_locali
 print("Elaboro csv personalizzato")
-df = pd.DataFrame({'Locali': locali, 'Prezzi': prezzi,
-                  'Media prezzo:': media_prezzo})
+dict = {'Locali': locali, 'Prezzi': prezzi,'Media Prezzo':media_prezzo}
+df = pd.DataFrame(dict)
 df.to_csv(f'Immobiliare_{tipo_immobile}.csv', index=False, encoding='utf-8')
+
 print("Fine elaborazione.")
