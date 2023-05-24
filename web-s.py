@@ -38,7 +38,7 @@ def FindNumber(string):
     return int(empty_string)
 
 def SearchNumberOfElements(type,zone):
-    url = f"https://www.immobiliare.it/vendita-{type}/roma/{zone}/?criterio=rilevanza&noAste=1"
+    url = f"https://www.immobiliare.it/vendita-{type}/roma/{zone}/?criterio=rilevanza&noAste=1&classeEnergetica=8"
     response = requests.get(url)
         # Analizzare documento HTML del codice sorgente con BeautifulSoup
     html = BeautifulSoup(response.text, 'html.parser')
@@ -78,7 +78,7 @@ def search(argv):
     print(f"Numeri di elementi trovati : {cycle}")
     pagine = math.ceil(cycle/25)
     print("Inizio scansione e raccolta dati")
-    printProgressBar(0, cycle, prefix = 'Progress:', suffix = 'Complete', length = 50)
+    #printProgressBar(0, cycle, prefix = 'Progress:', suffix = 'Complete', length = 50)
     if pagine  == 1:
         url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&noAste=1"
         print(url)
@@ -105,7 +105,7 @@ def search(argv):
         for i in range(1, pagine+1):
             time.sleep(0.1)
             printProgressBar(i, pagine, prefix = 'Progress:', suffix = 'Complete', length = 50)
-            url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&pag={i}&noAste=1"
+            url = f"https://www.immobiliare.it/vendita-{arg_type}/roma/{arg_zone}/?criterio=rilevanza&pag={i}&noAste=1&classeEnergetica=8"
             #print(url)
             # Eseguire richiesta GET
             response = requests.get(url)
@@ -115,26 +115,29 @@ def search(argv):
             locali_html = html.find_all('a', class_="in-card__title")
             price_html = html.find_all(
                 'li', class_="nd-list__item in-feat__item in-feat__item--main in-realEstateListCard__features--main")
-            # Raccogliere le citazioni in un elenco
+            # da trasformare locali e prices in set, e farne l'unione
             locali = list()
+            print(len(locali_html),len(price_html))
             for locale in locali_html:
                 locali.append(locale.text)
             # Raccogliere gli autori in un elenco
             prices = list()
             for price in price_html:
-                prices.append(price.text)
-
+                if price.text == 'Prezzo su richiesta':
+                    price.text = "0"
+                prices.append(price.text)      
+                      
             locali_tot += locali
             price_tot += prices
-
-    return locali_tot, price_tot,arg_type
+    print(len(locali_tot),len(price_tot))
+    return locali_tot, price_tot, arg_type
 
 
 locali, prezzi,tipo_immobile = search(sys.argv)
 media_prezzo = 0
-#somma_prezzi, count_locali, media_prezzo = 0, 0, 0
-#prezzi_media = [0]*len(prezzi)
-#print(prezzi_media)
+# somma_prezzi, count_locali, media_prezzo = 0, 0, 0
+# prezzi_media = [0]*len(prezzi)
+# print(prezzi_media)
 # for i in range(len(prezzi)):
 #     prezzi_media[i] = prezzi[i].replace("€","")
 #     print(prezzi_media[i])
@@ -144,10 +147,11 @@ media_prezzo = 0
 #     else:
 #         somma_prezzi+=float(prezzi_media[i])
 #     count_locali+=1
-#print(somma_prezzi)
-#media_prezzo = somma_prezzi/count_locali
+# print(somma_prezzi)
+# media_prezzo = somma_prezzi/count_locali
+print(len(locali),len(prezzi))
 print("Elaboro csv personalizzato")
-dict = {'Locali': locali, 'Prezzi': prezzi,'Media Prezzo':media_prezzo}
+dict = {'Locali': locali, 'Prezzi': prezzi}
 df = pd.DataFrame(dict)
 df.to_csv(f'Immobiliare_{tipo_immobile}.csv', index=False, encoding='utf-8')
 
