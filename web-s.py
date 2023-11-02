@@ -38,7 +38,7 @@ def FindNumber(string):
     return int(empty_string)
 
 def SearchNumberOfElements(type,zone):
-    url = f"https://www.immobiliare.it/vendita-{type}/roma/{zone}/?criterio=rilevanza&noAste=1&classeEnergetica=8"
+    url = f"https://www.immobiliare.it/vendita-{type}/roma/{zone}/?criterio=rilevanza&noAste=1"
     response = requests.get(url)
         # Analizzare documento HTML del codice sorgente con BeautifulSoup
     html = BeautifulSoup(response.text, 'html.parser')
