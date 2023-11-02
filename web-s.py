@@ -42,7 +42,7 @@ def SearchNumberOfElements(type,zone):
     response = requests.get(url)
         # Analizzare documento HTML del codice sorgente con BeautifulSoup
     html = BeautifulSoup(response.text, 'html.parser')
-    number_of_el = html.find('div', class_="in-searchList__title")
+    number_of_el = html.find('div', class_="in-resultsHeader__title is-listMapLayout")
     value = number_of_el.text
     split = value.split()
     number = split[0]
@@ -86,15 +86,12 @@ def search(argv):
         response = requests.get(url)
         # Analizzare documento HTML del codice sorgente con BeautifulSoup
         html = BeautifulSoup(response.text, 'html.parser')
-        # Estrarre tutte le citazioni e gli autori dal documento HTML
-        locali_html = html.find_all('a', class_="in-card__title")
+        locali_html = html.find_all('a', class_="in-reListCard__title is-short")
         price_html = html.find_all(
-            'li', class_="nd-list__item in-feat__item in-feat__item--main in-realEstateListCard__features--main")
-        # Raccogliere le citazioni in un elenco
+            'div', class_="in-reListCardPrice")
         locali = list()
         for locale in locali_html:
             locali.append(locale.text)
-        # Raccogliere gli autori in un elenco
         prices = list()
         for price in price_html:
             prices.append(price.text)
@@ -111,18 +108,18 @@ def search(argv):
             response = requests.get(url)
             # Analizzare documento HTML del codice sorgente con BeautifulSoup
             html = BeautifulSoup(response.text, 'html.parser')
-            # Estrarre tutte le citazioni e gli autori dal documento HTML
-            locali_html = html.find_all('a', class_="in-card__title")
+            locali_html = html.find_all('a', class_="in-reListCard__title is-short")
             price_html = html.find_all(
-                'li', class_="nd-list__item in-feat__item in-feat__item--main in-realEstateListCard__features--main")
+                'div', class_="in-reListCardPrice")
             # da trasformare locali e prices in set, e farne l'unione
             locali = list()
-            print(len(locali_html),len(price_html))
+            #print(len(locali_html),len(price_html))
             for locale in locali_html:
                 locali.append(locale.text)
             # Raccogliere gli autori in un elenco
             prices = list()
             for price in price_html:
+                print(price)
                 if price.text == 'Prezzo su richiesta':
                     price.text = "0"
                 prices.append(price.text)      
