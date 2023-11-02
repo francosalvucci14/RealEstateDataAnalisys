@@ -77,6 +77,7 @@ def search(argv):
     cycle = SearchNumberOfElements(arg_type,arg_zone)
     print(f"Numeri di elementi trovati : {cycle}")
     pagine = math.ceil(cycle/25)
+    print(pagine)
     print("Inizio scansione e raccolta dati")
     #printProgressBar(0, cycle, prefix = 'Progress:', suffix = 'Complete', length = 50)
     if pagine  == 1:
@@ -88,7 +89,7 @@ def search(argv):
         html = BeautifulSoup(response.text, 'html.parser')
         locali_html = html.find_all('a', class_="in-reListCard__title is-short")
         price_html = html.find_all(
-            'div', class_="in-reListCardPrice")
+            'div', class_="in-reListCardPrice")[0].find("span")
         locali = list()
         for locale in locali_html:
             locali.append(locale.text)
@@ -110,7 +111,7 @@ def search(argv):
             html = BeautifulSoup(response.text, 'html.parser')
             locali_html = html.find_all('a', class_="in-reListCard__title is-short")
             price_html = html.find_all(
-                'div', class_="in-reListCardPrice")
+                'div', class_="in-reListCardPrice")[0].find("span")
             # da trasformare locali e prices in set, e farne l'unione
             locali = list()
             #print(len(locali_html),len(price_html))
